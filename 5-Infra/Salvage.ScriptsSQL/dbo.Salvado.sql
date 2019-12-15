@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[Salvado]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    [Guid] UNIQUEIDENTIFIER NOT NULL, 
+    [Sinistro] VARCHAR(20) NOT NULL, 
+    [Placa] VARCHAR(10) NOT NULL, 
+    [Modelo] VARCHAR(30) NOT NULL, 
+    [Marca] VARCHAR(20) NOT NULL, 
+    [Cor] VARCHAR(20) NOT NULL,
+    [Ano] INT NOT NULL, 
+    [ValorFipe] MONEY NOT NULL, 
+    [Apolice] VARCHAR(15) NOT NULL, 
+    [NomeSegurado] VARCHAR(50) NOT NULL, 
+    [Cidade] VARCHAR(40) NOT NULL, 
+    [DataCriacao] DATETIME NOT NULL, 
+    [DataAtualizacao] DATETIME NOT NULL, 
+    [Observacoes] VARCHAR(1000) NULL, 
+    [IdDespachante] INT NULL, 
+    [IdPatio] INT NULL, 
+    [IdGuincheiro] INT NULL, 
+    [IdOficina] INT NULL, 
+    [IdSeguradora] INT NOT NULL, 
+    [IdUsuarioUltimaAtualizacao] INT NOT NULL, 
+    [IdWorkflow] INT NOT NULL, 
+    [IdWorkflowPassoAtual] INT NOT NULL
+)
